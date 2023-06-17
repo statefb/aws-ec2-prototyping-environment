@@ -37,7 +37,7 @@ chmod 400 prototype.pem
 - Login using SSH command. The IP address can be found at the bottom of output on CloudShell as `HostPublicIP`.
 
 ```
-ssh -i prototyping-env.pem ec2-user@XX.XX.XX.XX
+ssh -i prototype.pem.pem ec2-user@XX.XX.XX.XX
 ```
 
 ## Note
