@@ -17,7 +17,11 @@ This setup comes pre-installed with Python, Node.js, and Docker, which are commo
 git clone https://github.com/statefb/aws-ec2-prototyping-environment
 ```
 
-- Run the script. The first argument should be the access source IP's CIDR, the second argument is the stack name.
+- Run the script. The first argument should be the access source IP's CIDR, the second argument is the stack name. **Substitute `XX.XX.XX.XX` to your environment accordingly.**
+
+```
+cd aws-ec2-prototyping-environment
+```
 
 ```
 ./bin.sh XX.XX.XX.XX/32 MyProtoStack

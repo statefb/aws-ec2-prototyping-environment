@@ -43,14 +43,13 @@ while true; do
         break
     fi
     printf "\r${spin:i++%${#spin}:1}"
-    sleep 0.3
 done
 echo -e "\nDone!\n"
 
 outputs=$(aws cloudformation describe-stacks --stack-name $StackName --query 'Stacks[0].Outputs')
-echo "Copy ssh key from here: ------------------------------"
+echo "Copy ssh key from here: ==============================="
 echo "$outputs" | jq -r '.[] | select(.OutputKey == "GetSSHKeyCommand") | .OutputValue' | xargs -I {} sh -c {}
-echo "End of ssh key --------------------------\n"
+echo -e "End of ssh key ===============================\n"
 
 hostPublicIp=$(echo "$outputs" | jq -r '.[] | select(.OutputKey == "HostPublicIp") | .OutputValue')
 echo "HostPublicIP: $hostPublicIp"
