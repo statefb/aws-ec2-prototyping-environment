@@ -146,7 +146,7 @@
           }
         ],
         "UserData": {
-          "Fn::Base64": "#!/bin/bash\nsudo yum install -y nodejs docker\nsudo yum install -y jq tree git\nsudo systemctl enable docker\nsudo systemctl start docker"
+          "Fn::Base64": "#!/bin/bash\nsudo yum install -y nodejs docker\nsudo yum install -y jq tree python3-pip git\nsudo systemctl enable docker\nsudo systemctl start docker"
         }
       },
       "DependsOn": ["InstanceRole"]
