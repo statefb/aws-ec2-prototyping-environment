@@ -115,7 +115,6 @@
     "Instance": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
-        "AvailabilityZone": "ap-northeast-1a",
         "BlockDeviceMappings": [
           {
             "DeviceName": "/dev/xvda",
@@ -138,7 +137,7 @@
             "Fn::GetAtt": ["SecurityGroup", "GroupId"]
           }
         ],
-        "SubnetId": "subnet-0938f3f0fa2a66bff",
+        "SubnetId": { "Ref": "SubnetId" },
         "Tags": [
           {
             "Key": "Name",
