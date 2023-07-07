@@ -8,7 +8,7 @@ This repository is designed to help you quickly start prototyping with AWS. It s
 
 This setup comes pre-installed with Python, Node.js, and Docker, which are commonly used for development in AWS.
 
-## Instructions
+## Getting started
 
 - Open [CloudShell](https://console.aws.amazon.com/cloudshell/home) in AWS.
 - Clone this repository.
@@ -39,6 +39,8 @@ chmod 400 prototype.pem
 ```
 ssh -i prototype.pem ec2-user@XX.XX.XX.XX
 ```
+
+- Follow the instructions provided by the respective IDE's documentation to connect the EC2 instance. For example, you can refer to VSCode's documentation [here](https://code.visualstudio.com/docs/remote/ssh).
 
 ## Note
 
