@@ -1,5 +1,7 @@
 # AWS EC2 Prototyping Environment
 
+**THIS REPOSITORY HAS BEEN MOVED TO** [aws-samples/ec2-setup-for-prototyping](https://github.com/aws-samples/ec2-setup-for-prototyping).
+
 ## Overview
 
 This repository is designed to help you quickly start prototyping with AWS. It sets up an EC2 instance, configured to be accessed via Remote SSH such as [VSCode](https://code.visualstudio.com/docs/remote/ssh). The only requirement is an AWS account.
